@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Clock</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <style>
+        body { background: #000; color: #0f0; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; font-family: monospace; }
+        #time { font-size: 5rem; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div id="time">00:00:00</div>
+    <script>
+        function update() {
+            document.getElementById('time').innerText = new Date().toLocaleTimeString();
+        }
+        setInterval(update, 1000);
+        update();
+    </script>
+</body>
+</html>
