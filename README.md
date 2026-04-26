@@ -1,2 +1,2 @@
 # Clock
-A custom clock for mobild
+A custom clock for mobil
